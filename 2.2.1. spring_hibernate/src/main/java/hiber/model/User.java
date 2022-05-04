@@ -21,7 +21,7 @@ public class User implements Serializable {
    private String email;
 
    @MapsId
-   @OneToOne (cascade = CascadeType.ALL)
+   @OneToOne
    @JoinColumn (name = "car")
    private Car car;
 
